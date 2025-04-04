@@ -5,8 +5,14 @@ object bolichito {
   var  objetoEnVidriera = pelota
   var objetoEnMostrador = remera
 
+  method objetoEnVidriera(){
+    return objetoEnVidriera
+  }
+  method objetoEnMostrador(){
+    return objetoEnMostrador
+  }
   method objetoEnMostrador(objetoAPoner) {
-    objetoEnMostrador = objetoAponer
+    objetoEnMostrador = objetoAPoner
   }
   method objetoEnVidriera(objetoAPoner) {
     objetoEnVidriera = objetoAPoner

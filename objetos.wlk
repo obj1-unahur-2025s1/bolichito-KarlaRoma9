@@ -18,7 +18,7 @@ object pardo {
     return false
   }
 }
-objet naranja{
+object naranja{
   method esFuerte(){
     return true
   }
@@ -28,7 +28,7 @@ objet naranja{
 object cobre {
   method brilla(){
     return true
-  } = 
+  }  
 }
 object vidrio {
   method brilla() {
@@ -119,12 +119,27 @@ object placa{
     color = unColor
   }
 }
-object arito(){
+object arito{
   method color(){
     return celeste
   }
 }
-object banquito(){
+object cajita{
+  var objetoInterno = pelota
+  method color(){
+    return rojo
+  }
+  method material(){
+    return cobre
+  }
+  method peso(){
+    return 400 + objetoInterno.peso()
+  }
+  method objetoInterno (unObjeto){
+    objetoInterno = unObjeto
+  }
+}
+object banquito {
   var color = naranja
   method peso(){
     return 1700
@@ -139,18 +154,4 @@ object banquito(){
     color = unColor
   }
 }
-object cajita {
-  var objetoInterno = arito
-  method color(){
-    return rojo
-  }
-  method material(){
-    return cobre
-  }
-  method peso(){
-    return 400 + objetoInterno.peso()
-  }
-  method objetoInterno (unObjeto){
-    objetoInterno = unObjeto
-  }
-}
+
